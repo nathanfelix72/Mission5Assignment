@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome! I'm here to help!</h1>
+    <p>I would love to teach you about how to make MVC webpages, for a cost</p>
+    <p>Don't worry, it's only a small fee of $30 an hour ;)</p>
+    <p>Attached is a handy calculator to see how much you'll owe me for a session</p>
+
+    <label for="hours">How many hours would you like me to help you for?:</label>
+    <input type="number" id="hours" min="1" placeholder="Enter hours" required>
+
+	<br /> <br />
+    <label for="hourlyRate">Reminder! Hourly Rate:</label>
+    <input type="text" id="hourlyRate" value="$30" readonly>
+
+    <br />  <br />
+    <button id="calculateBtn">Calculate! :)</button>
+
+    <br /> <br />
+    <label for="totalCost">Total you'll owe me. Thank you so much!:</label>
+    <input type="text" id="totalCost" readonly>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/calculator.js"></script>
+</div>
