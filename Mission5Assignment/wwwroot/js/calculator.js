@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     $("#calculateBtn").click(function () {
-        // Get input values
+        // Get values
         var rate = 30.00;
         var hours = parseFloat($("#hours").val());
 
@@ -13,7 +13,7 @@
         // Calculate total cost
         var total = rate * hours;
 
-        // Display the result
+        // Display result
         $("#totalCost").val(`$${total.toFixed(2)}`);
     });
 });

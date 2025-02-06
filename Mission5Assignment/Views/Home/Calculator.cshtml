@@ -3,21 +3,26 @@
 }
 
 <div class="text-center">
+    <!-- Calculator Page to display how much people will need to pay me :) -->
     <h1 class="display-4">Welcome! I'm here to help!</h1>
     <p>I would love to teach you about how to make MVC webpages, for a cost</p>
     <p>Don't worry, it's only a small fee of $30 an hour ;)</p>
     <p>Attached is a handy calculator to see how much you'll owe me for a session</p>
 
+    <!-- Input for how many hours -->
     <label for="hours">How many hours would you like me to help you for?:</label>
     <input type="number" id="hours" min="1" placeholder="Enter hours" required>
 
+    <!-- Display hourly rate as $30 -->
 	<br /> <br />
     <label for="hourlyRate">Reminder! Hourly Rate:</label>
     <input type="text" id="hourlyRate" value="$30" readonly>
 
+    <!-- Run the calculator.js script and calculate it cost -->
     <br />  <br />
     <button id="calculateBtn">Calculate! :)</button>
 
+    <!-- Display total cost -->
     <br /> <br />
     <label for="totalCost">Total you'll owe me. Thank you so much!:</label>
     <input type="text" id="totalCost" readonly>
